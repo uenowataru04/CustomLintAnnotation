@@ -1,0 +1,20 @@
+apply plugin: 'java'
+apply plugin: 'kotlin'
+
+dependencies {
+    compileOnly "com.android.tools.lint:lint-api:$lintVersion"
+    compileOnly "com.android.tools.lint:lint-checks:$lintVersion"
+    testCompile "junit:junit:4.12"
+    testCompile "com.android.tools.lint:lint:$lintVersion"
+    testCompile "com.android.tools.lint:lint-tests:$lintVersion"
+    testCompile "com.android.tools:testutils:$lintVersion"
+}
+
+jar {
+    manifest {
+        attributes("Lint-Registry-v2": "com.example.customlint.CustomIssueRegistry")
+    }
+}
+
+sourceCompatibility = "8"
+targetCompatibility = "8"
