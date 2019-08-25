@@ -3,7 +3,7 @@
 
 `あ`
 ```kotlin
-あ
+class ABC(val arg: Stirng)
 ```
 あ
 あ
