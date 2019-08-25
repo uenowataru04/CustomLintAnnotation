@@ -1,7 +1,7 @@
 # CustomLintAnnotation
 ## テストcommit
 
-`あ`
+## `あ`
 ```kotlin
 class ABC(val arg: Stirng)
 ```
